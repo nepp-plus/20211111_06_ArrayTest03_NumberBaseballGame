@@ -18,6 +18,24 @@ public class MainDrive {
 			
 			while (true) {
 				
+//				1~9 중 하나를 랜덤으로 추출.
+				int randomNum = (int)  (Math.random() * 9 + 1);
+				
+//				중복 검사.  cpuNumbers에 같은 값이 있나? 확인.
+				
+				boolean isDuplOk = true;
+				
+				for (int cpuNum  : cpuNumbers) {
+					
+					if ( randomNum  ==  cpuNum) {
+						
+//						중복 숫자 발견! => 사용하면 안됨!
+						isDuplOk = false;
+						
+					}
+					
+				}
+				
 				
 //				써도 되는 숫자면, cpuNumber의 위치에 맞게 집어넣고, 다음숫자로 넘어가자.
 				
