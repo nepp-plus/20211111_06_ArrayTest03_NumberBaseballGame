@@ -87,6 +87,49 @@ public class MainDrive {
 			userNumbers[2] = inputNum % 10; 
 			
 			
+//			?S / ?B 값을 저장할 변수.
+			int strikeCount = 0;
+			int ballCount = 0;
+			
+//			cpuNumbers / userNumbers 두 배열을 비교.
+//			같은숫자 + 위치도 같으면? S 하나 발견.
+//			같은숫자 but, 위치가 다르면?  B 하나 발견.
+			
+			
+//			내 숫자를 바꿔주는 반복
+			for (int i=0 ; i < userNumbers.length ; i++) {
+				
+//				컴퓨터가 낸 숫자를 둘러보는 반복
+				
+				for (int j=0 ; j < cpuNumbers.length ; j++) {
+					
+//					내 숫자 / 컴퓨터 숫자 같은가?
+					
+					if (userNumbers[i] == cpuNumbers[j] ) {
+						
+//						두 숫자의 위치가 같은가? => 두 배열의 index인 i, j의 값이 같은가?
+						if ( i == j ) {
+							
+//							숫자도 같고, 위치도 같다. -> S 발견
+							strikeCount++;
+							
+						}
+						else {
+							
+//							숫자는 같지만, 위치가 다르다. -> B 발견
+							ballCount++;
+							
+						}
+						
+					}
+					
+				}
+				
+				
+			}
+			
+			
+			
 		}
 		
 		
