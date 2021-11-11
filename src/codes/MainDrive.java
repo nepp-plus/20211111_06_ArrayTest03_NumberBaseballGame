@@ -39,13 +39,30 @@ public class MainDrive {
 				
 //				써도 되는 숫자면, cpuNumber의 위치에 맞게 집어넣고, 다음숫자로 넘어가자.
 				
+				if (isDuplOk) {
+					
+					cpuNumbers[i] = randomNum;
+					
+//					무한 반복 탈출
+					break;
+					
+				}
+				
 			}
 			
 			
 		}
 		
-		
+//		나온 문제가 어떤 값인지 출력
+		for (int cpuNum :   cpuNumbers) {
+			System.out.println("문제 숫자 : " + cpuNum);
+		}
 		
 	}
 
 }
+
+
+
+
+
