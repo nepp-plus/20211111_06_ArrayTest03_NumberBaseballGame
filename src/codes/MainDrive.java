@@ -129,6 +129,17 @@ public class MainDrive {
 			}
 			
 			
+//			?S ?B인지 변수에 저장되어있다.
+			
+			System.out.println(strikeCount+"S / " + ballCount + "B 입니다.");
+			
+//			3S라면? 정답 맞췄다. => 무한 반복 탈출
+			if (strikeCount == 3) {
+				
+				System.out.println("축하합니다. 정답을 맞췄습니다.");
+				break;
+			}
+			
 			
 		}
 		
